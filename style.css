@@ -29,7 +29,7 @@ header {
 .header_burger {
 	display: none;
 }
-button {
+.btn_mail {
 	background-color: rgb(255, 255, 255);
 	font-weight: 400;
 	border: 1px solid #6ec1e4;
@@ -40,7 +40,7 @@ button {
 	width: 84px;
 	height: 39px;
 }
-button:hover {
+.btn_mail:hover {
 	transition: all 0.2s ease-in-out;
 	background-color: #4fb5eb;
 	color: white;
@@ -99,17 +99,17 @@ button:hover {
 	}
 }
 .sub_nav_select {
-    display: none;
-    border-top: 4px solid #4fb5eb;
+	display: none;
+	border-top: 4px solid #4fb5eb;
 	width: 260px;
 	background-color: #31609f;
 	padding: 7px 25px;
-    position: absolute;
-    color: gainsboro;
-    transform: translateY(23px);
-    animation: select_nav ease-in 0.15s;
+	position: absolute;
+	color: gainsboro;
+	transform: translateY(23px);
+	animation: select_nav ease-in 0.15s;
 }
-@keyframes select_nav{
+@keyframes select_nav {
 	0% {
 		opacity: 0;
 	}
@@ -119,22 +119,22 @@ button:hover {
 }
 
 .sub_nav_select .li {
-    cursor: pointer;
+	cursor: pointer;
 	list-style: none;
 	width: 90%;
 	height: 50px;
 	padding: 17px;
 	border-bottom: 1px solid rgb(136, 136, 146);
 }
-.sub_nav_select .li2{
-    list-style: none;
-    cursor: pointer;
+.sub_nav_select .li2 {
+	list-style: none;
+	cursor: pointer;
 	width: 90%;
 	height: 50px;
 	padding: 17px;
 }
-.sub_nav_select li:hover{
-    color: white;
+.sub_nav_select li:hover {
+	color: white;
 }
 /* menu */
 .mobile_menu_container {
@@ -231,11 +231,10 @@ button:hover {
 /* Header Adaptive layout */
 #menu-toggle {
 	display: none;
-    position: absolute;
-    transform: translateY(-20px);
-    width: 40px;
-    height: 40px;
-
+	position: absolute;
+	transform: translateY(-20px);
+	width: 40px;
+	height: 40px;
 }
 .menu-button,
 .menu-button::before,
