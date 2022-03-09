@@ -5,6 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./header.css" />
+		<link rel="stylesheet" href="./mobileBurger.css">
+		<link rel="stylesheet" href="./footer.css" />
 		<link rel="stylesheet" href="./response.css" />
 		<link
 			rel="stylesheet"
@@ -26,23 +29,22 @@
 					alt=""
 				/>
 			</div>
-		<div class="header_burger">
+			<div class="header_burger">
 				<input id="menu-toggle" type="checkbox" />
-				<label
-					class="menu-button-container"
-					for="menu-toggle"
-				>
+				<label class="menu-button-container" for="menu-toggle">
 					<div class="menu-button"></div>
 				</label>
-		</div>
+			</div>
 			<ul class="nav">
 				<li>
 					<a class="link" href=""><span>START</span></a>
 				</li>
 				<li class="UBER">
-					<a class="link" href=""><span class="select_in_nav">UBER ▼</span></a>
+					<a class="link" href=""
+						><span class="select_in_nav">UBER ▼</span></a
+					>
 					<ul class="sub_nav_select">
-						<li	 class="li"><a href="">UBER MIC</a></li>
+						<li class="li"><a href="">UBER MIC</a></li>
 						<li class="li2"><a href="">UBER KIRGISISTAN</a></li>
 					</ul>
 				</li>
@@ -59,7 +61,7 @@
 					<a class="link" href=""><span>KONTAKT</span></a>
 				</li>
 			</ul>
-				<button class="btn_mail">EMAIL</button>
+			<button class="btn_mail">EMAIL</button>
 		</header>
 		<div class="bg_burger">
 			<div class="container mobile_menu_container">
@@ -68,7 +70,7 @@
 					<li>
 						<div class="uber_select">
 							<span>UBER</span>
-							<label style="display: inline-block;">
+							<label style="display: inline-block">
 								<input class="inpF" type="checkbox" />
 								<div class="f"></div>
 							</label>
@@ -202,7 +204,7 @@
 		</div>
 		<script>
 			let burger = document.getElementById('menu-toggle')
-			console.log(burger);
+			console.log(burger)
 			let inpCheck = document.querySelector('.inpF')
 			let UBER = document.querySelector('.UBER')
 			inpCheck.addEventListener('click', () => {
@@ -210,7 +212,7 @@
 				if (sub_nav.style.display === 'block') {
 					setTimeout(() => {
 						sub_nav.style.display = 'none'
-					}, 300);
+					}, 300)
 					sub_nav.classList.add('sub_nav_no')
 				} else {
 					sub_nav.classList.remove('sub_nav_no')
@@ -224,21 +226,21 @@
 				console.log(x)
 				if (x.style.display === 'block') {
 					setTimeout(() => {
-						x.style.display = 'none'		
-					}, 300);
+						x.style.display = 'none'
+					}, 300)
 					x.classList.add('burger_no')
 				} else {
 					x.classList.remove('burger_no')
 					x.style.display = 'block'
 				}
 			}
-	        UBER.addEventListener("mouseout",()=>{
+			UBER.addEventListener('mouseout', () => {
 				let sub_nav_select = document.querySelector('.sub_nav_select')
-					sub_nav_select.style.display = 'none'
+				sub_nav_select.style.display = 'none'
 			})
-			UBER.addEventListener('mouseover',()=>{
+			UBER.addEventListener('mouseover', () => {
 				let sub_nav_select = document.querySelector('.sub_nav_select')
-					sub_nav_select.style.display = 'block'
+				sub_nav_select.style.display = 'block'
 			})
 		</script>
 	</body>
